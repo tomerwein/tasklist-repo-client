@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Rubik&family=Solitreo&display=swap');
+
+.register_heading, .sign_in_heading {
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 40px;
+    margin: 20px 0;
+    color: rgb(4, 84, 255);
+    z-index: 1;
+    text-align: center;
+}
+
+html {
+  font-size: 22px;
+  color: rgb(4, 84, 255);
+}
+
+.register_box {
+    background-color: #b3cbcd;
+    min-width: 80vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.border_the_login {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;  
+    max-height: 600px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Solitreo", cursive;
+}
+
+.border_the_register {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;  
+    max-height: 600px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Solitreo", cursive;
+}
+
+.info_if_not_valid {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: rgb(214, 31, 31);
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    right: 85px;
+}
+
+.info_if_not_valid > svg {
+    margin-right: 0.25rem;
+}
+
+.clean_screen {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="text"], input[type="password"]{
+    font-family: 'Solitreo', cursive;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    position: relative;
+    right: 15px;
+    width: 250px;
+  }
+
+.show_v {
+    display: inline-flex;
+    align-items: center;
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.hide_v, .hide_x, .hide_password_eye, .hide_exclamation{
+    display: none;
+}
+
+.show_x{
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.show_exclamation{
+    color: rgba(255, 0, 0, 0.954);
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+
+.icon_user, .icon_password, .icon_match_passwords {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    right: 12px
+  }
+
+.password {
+    margin-top: 10px;
+}
+
+.matchPasswords {
+    margin-top: 10px;
+}
+
+.sign_up_button {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    transition-duration: 0.3s;
+    color: rgb(4, 84, 255);
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: not-allowed;
+}
+
+.sign_up_button:not([disabled]) {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    transition-duration: 0.3s;
+    color: rgb(4, 84, 255);
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+  
+.sign_up_button:hover:not([disabled]) {
+    background-color: #9d06e9; 
+    color: rgb(255, 255, 255);
+  }
+
+.sign_up_button:active:not([disabled]) {
+    background-color: #3e1a79;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.sign_in_button {
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    transition-duration: 0.3s;
+    color: rgb(4, 84, 255);
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sign_in_button:hover {
+    background-color: #9d06e9; 
+    color: rgb(255, 255, 255);
+  }
+
+.sign_in_button:active {
+    background-color: #3e1a79;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.user_container, .password_container, .match_container {
+    width: 400px;
+    margin-left: 165px;
+}
+
+.have_an_account {
+    margin-top: 15px;
+}
+
+.check_in_button {
+    color: rgb(214, 31, 31);
+    font-family: 'Solitero', cursive;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    font-size: 18px;
+}
+
+.check_in_button:hover {
+    color: #9d06e9;
+  }
+
+.check_in_button:active {
+    color: #3e1a79;
+    transform: translateY(1px);
+  }
+
+.register_password_button {
+    padding: 15px;
+    color: rgb(4, 84, 255);
+    font-family: 'Solitero', cursive;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    font-size: 16px;
+}
+
+.register_password_button:hover {
+    color: #9d06e9; ;
+  }
+
+.register_password_button:active {
+    color: #3e1a79;
+    transform: translateY(1px);
+  }
+
+.succeed_container {
+    background-color: #b3cbcd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+}
+
+.register_succeed_text {
+    padding-bottom: 300px;
+    width: 400px;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.check_in_container {
+    margin-left: 80px;
+    width: 400px;
+    font-size: 40px;
+}
+
+.check_in_succeed_button {
+    color: rgb(214, 31, 31);
+    font-family: 'Solitero', cursive;
+    background-color: transparent;
+    cursor: pointer; 
+    border: transparent;
+    font-size: 28px;
+}
+
+.succeed_text_container {
+    padding-bottom: 250px;
+}
+
+.error_message {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #ed0000;
+    color: #fff;
+    padding: 0.25rem;
+}
+
+.submit_signin {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.submit_register {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.show_password_eye{
+    background: none;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    top: 5px;
+    font-size: 0.9rem;
+    color: #2f00ff;
+}
+
+.terms_and_conditions{
+    position: relative;
+    right: 10px;
+    top: 12px;
+    font-size: 18px;
+}
+
+
